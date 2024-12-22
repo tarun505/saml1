@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EntityDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata" 
+                  entityID="http://localhost:8080/saml2/service-provider-metadata/okta">
+    <SPSSODescriptor AuthnRequestsSigned="true" WantAssertionsSigned="true" 
+                     protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+        <KeyDescriptor use="signing">
+            <KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#">
+                <X509Data>
+                    <X509Certificate>
+                        MIIDCTCCAfGgAwIBAgIUNHrObDzsJ/IORbpY87FmVRTMpSQwDQYJKoZIhvcNAQEL
+BQAwFDESMBAGA1UEAwwJbG9jYWxob3N0MB4XDTI0MTIxNzE2MjgzNFoXDTI1MTIx
+NzE2MjgzNFowFDESMBAGA1UEAwwJbG9jYWxob3N0MIIBIjANBgkqhkiG9w0BAQEF
+AAOCAQ8AMIIBCgKCAQEAoqgkaFeKxeVaTOp8BTbLdTYEvX78WaKEwXnA2X58FsU0
+BqeAWsSGAchKUYTicrbAanQmoaj+FI5Mm/qAkHtnuNjyVMxUaXje6jDGaX5/+VTD
+EVmpZZxhjEEkz6sNuE2pjCDQ8xZTPioL/EP6ZahCv05QTvCeIOkFfeEJFgEgZUWx
+0LI8SGUd+0nHYC5oJIFAaYKqE42h3wXD2xR7ih/E/vsToHyS7fC9VgYvM0tIkbCp
+z6EWLHOBcmVbcHmux2MpVFpMMrP/kabL/HzmMLPgSuAtRtZFvUIBKyYJvUSCl9Is
+f9gUH82ifaCtt1Z/ESgjFHrjVLn00CUUW8sgfJJE2wIDAQABo1MwUTAdBgNVHQ4E
+FgQUs0+v1McdYy6zwDYtzD95ChxybU4wHwYDVR0jBBgwFoAUs0+v1McdYy6zwDYt
+zD95ChxybU4wDwYDVR0TAQH/BAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAQEANDus
+lfiPwwXznPWAPRukavAnNF920StxjouFXxIY0a48603KqJ6nq+vY+YAso6xHYS+T
+7RkCzqbGY7VFvhfQsJmeN9lHoPuXThf9OYlrqpLXggIC8VJqOJpFQMa+wjaG7rqO
+b8zjGSMZAS68Ien/PObG8LuxFfmTN4cLQq9xgrf/XkU5G6z++EqRRnaej00qFgc4
+6GmcUtpxYPh3/NtdzZPE+BWOVRFqrZwxBzRLAlD9J+4fc5xbVj0BS88RJTvHbq/m
+OI/7GOwKzTHY+MD3sWAEgItnjYuECqHUoPmJeEfmYjfZwU7/ws2aij7t0lglOeFV
+FfogOTQifeFD+CmU7g==
+                    </X509Certificate>
+                </X509Data>
+            </KeyInfo>
+        </KeyDescriptor>
+        <NameIDFormat>
+            urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress
+        </NameIDFormat>
+        <AssertionConsumerService
+            Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+            Location="http://localhost:8080/login/saml2/sso/okta"
+            index="0" isDefault="true"/>
+    </SPSSODescriptor>
+</EntityDescriptor>
